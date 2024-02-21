@@ -1,0 +1,3 @@
+-Xmx8g -Xms8g -Xmn4g -Xlog:gc*=info,phases*=info,heap*=debug,safepoint=info:file=./gc.log::filecount=3,filesize=10m -XX:G1HeapWastePercent=30 -XX:InitiatingHeapOccupancyPercent=40 -XX:-G1UseAdaptiveIHOP -XX:G1MixedGCCountTarget=16 -XX:SurvivorRatio=4
+
+-Xmx16g -XX:+UseZGC -XX:+ZGenerational -Xlog:gc*=info,phases*=info,safepoint=info:file=./gc.log::filecount=3,filesize=10m
