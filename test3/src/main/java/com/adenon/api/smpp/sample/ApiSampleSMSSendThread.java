@@ -40,6 +40,7 @@ public class ApiSampleSMSSendThread extends Thread {
 							AddressDescriptor.getDefaultInternationalAdressDescriptor("905422082419"),
 							new AdditionalParamatersDescriptor().setRequestDelivery(true), null);
 				}
+				System.out.println("%%%%%%%%%%% Sent : " + i + " TH : " + Thread.currentThread().getName());
 			} catch (final Exception e) {
 				e.printStackTrace();
 			}
